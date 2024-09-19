@@ -25,43 +25,37 @@ This entire project is conducted using MySQL, an open-source relational database
 
 ## Project results
 
-The main results obtained from this Discovery Project are summarized below:
+In this project, we conducted an extensive analysis of a sports company’s database using SQL technology. The project was structured into five sprint weeks, aiming to uncover valuable insights and information, particularly related to sales, clients, products, and distribution channels.
 
-**1. Ten neighborhoods with a high investment potential have been identified**
-* They can be segmented into 4 groups depending on the type, quality, and property location.
-* These 4 groups, which have been identified, are the following:
-  * *Low cost Investment*: Simancas, Ambroz, Marroquina, San Juan Bautista.
-  * *Medium cost investment*: El Plantio, Valdemarín, Valdefuentes.
-  * *Medium-high cost investment*: Jerónimos, Fuentela reina.
-  * *High cost investment*: Recoletos.
+**1. First sprint week**
+We collaborated with the IT Director to access the company’s database and made initial improvements to data quality, including checking granularity and eliminating duplicate records. At this stage, we also properly established the entity relationships for the corrected data.
 
-**2. It is recommended to search for two-bedroom properties that can accommodate 4 guests**
-* The number of guests that maximize the rental price while minimizing the property's purchase price is 4.
+**2. Second sprint week**
+Working with the Strategy and Marketing Directors, we conducted simple queries to gain an overview of database performance. We also gathered valuable insights on top channels, key clients, and their turnover trends.
 
-**3. It is recommended to search for properties in one of the identified neighborhoods that are not necessarily close to points of interest**
-* These properties are expected to have a lower purchase price.
-* It seems that proximity to points of interest does not have a particular impact on rental prices.
-  
-**4. A new business model based on rentals for specific moments of high sporting interest should be explored**
-* It is advisable to look for opportunities in the San Blas neighborhood.
-* These properties present a particularly high cost-income ratio per night.
-* There are still many rentals that are not exploiting this potential.
+**3. Third sprint week**
+Our focus was on margin analysis and cost reduction in the company’s portfolio, in collaboration with the Financial and Marketing Directors. We analyzed the main product lines, evaluated their turnover contributions, and identified trending products.
+
+**4. Fourth sprint week**
+With the Sales Director, we developed a client segmentation model, categorizing stores into four main groups based on their performance, considering turnover and order volume. We also evaluated the growth potential of each client and created a system to identify inactive clients.
+
+**5. Fifth sprint week**
+In the final sprint, we worked with the Financial Director to develop a basic yet effective recommendation system based on each store’s historical purchases. This system helps the company offer more relevant recommendations to clients, ultimately boosting profitability.
 
 ## Project structure
 
-* 📁 Datos: Project datasets.
+* 📁 Data:
   * 📁 Imagenes: Contains project images.
-* 📁 Notebooks:
-  * <mark>01_Diseño del proyecto.ipynb</mark>: Notebook compiling the initial design of the project.
-  * <mark>02_Analisis de ficheros y preparacion del caso.ipynb</mark>: Notebook analyzing the main data and how to obtain those.
-  * <mark>03_Creacion del Datamart Analitico.ipynb</mark>: Notebook creating analytic data mart (loading and unifying data, applying data quality processes, and so on).
-  * <mark>04_Preparacion de datos.ipynb</mark>: Notebook compilling feature engineering processes.
-  * <mark>05_Analisis e Insights.ipynb</mark>: Notebook used for the execution of the exploratory data analysis, which collects the business insights and the recommended actionable initiatives.
-  * <mark>06_Comunicacion de resultados.ipynb</mark>: Brief executive report for the communication of results using McKinsey's Exhibits methodology.
+  * <mark>project_database.sql</mark>: Database of the project.
+* <mark>SQL_Project.sql</mark>: File containing all the queries developed in the entire database analysis project.
 
 ## Instructions
 
-* Unzip airbnb.rar under 'Datos' folder.
 * Remember to update the <mark>project_path</mark> to the path where you have replicated the project.
+* Open your preferred SQL IDE (we recommend MySQL Workbench for this project).
+* Establish a new connection between the SQL server and your selected IDE.
+* Load the <mark>project_database.sql</mark> file into the IDE. In MySQL Workbench, you can do this by navigating to:
+  * Server -> Data Import -> Import from Self-Contained File -> Start Import.
+* Open the <mark>SQL_Project.sql</mark> file and run the queries as you scroll through to view the results.
 
 </div>
