@@ -45,7 +45,7 @@ In the final sprint, we worked with the Financial Director to develop a basic ye
 ## Project structure
 
 * 📁 Data:
-  * 📁 Imagenes: Contains project images.
+  * 📁 Images: Contains project images.
   * <mark>project_database.sql</mark>: Database of the project.
 * <mark>SQL_Project.sql</mark>: File containing all the queries developed in the entire database analysis project.
 
